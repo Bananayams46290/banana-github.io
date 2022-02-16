@@ -15,10 +15,10 @@
 
   </head>
   <body>
-    <header>index file as a flexbox, 3-column</header>
-    <nav><h3>Navigation with no viewport in a h3-tag</h3></nav>
-    <aside><p>Canned beans p-tag</p></aside>
-    <section> <h3 style="font-size:2.5vw">canned bean 1</h3>
+    <header class="header">index file as a flexbox, 3-column</header>
+    <nav class="menu"><h3>Navigation with no viewport in a h3-tag</h3></nav>
+    <aside class="aside"><p>Canned beans p-tag</p></aside>
+    <section class="main"> <h3 style="font-size:2.5vw">canned bean 1</h3>
       <articles>
        <p style="font-size:1vw">Here are boiled beans to the mandatory Experiment Pages</p>
         <!-- See the HTML.txt document for a summary -->
@@ -36,7 +36,7 @@
       </articles>
     </section>
   </body>
-<footer>
+<footer class="footer">
  <blockquote cite="https://www.brainyquote.com/quotes/barack_obama_409148"><!--Date Accessed 20220208 --></blockquote>
  <p>
    <strong>Why can't I just eat my waffle? </strong>
@@ -45,4 +45,35 @@
   <p>&copy Yousef Abu Al-oon, powered by Canned Beans in Github</p>
 </footer>
 </html>
-<style> div {border: thin dotted red;} </style>
+
+<style>
+div {border: thin dotted red;}
+* {
+box string: border-box;
+}
+.header{
+  border: 1px solid red;
+}
+.menu {
+  width: 25%
+  float: left;
+  padding: 15px ;
+  border: 1px solid red;
+}
+.main {
+  width: 50%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+.aside {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+.footer {
+  border: 1px solid red;
+  padding: 15px;
+}
+</style>
